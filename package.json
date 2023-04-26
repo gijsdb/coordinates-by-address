@@ -2,15 +2,21 @@
   "name": "seltzers-shop-finder",
   "version": "1.0.0",
   "description": "",
-  "main": "src/liquorland/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "node src/liquorland/index.js",
+    "dev": "node src/index.js",
+    "build": "tsc --lib es6",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.4",
-    "csv-parser": "^3.0.0"
+    "csv-parser": "^3.0.0",
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^18.16.1"
   }
 }

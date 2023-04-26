@@ -1,4 +1,6 @@
 /node_modules
-liquorlands.csv
-resultSeptember.json
 .env
+source.csv
+results.json
+old.js
+/build
