@@ -1,10 +1,13 @@
 const { CoordFinder } = require("../build/index.js");
+require('dotenv').config();
 
 async function main() {
     const cf = new CoordFinder({
-        sourceFile: './source.csv',
-        outputFile: './results.json',
-        apiKey: API_KEY
+        csvSourceFile: './source.csv',
+        jsonOutputFile: './results.json',
+        apiKey: process.env.POSITION_STACK_API_KEY,
+        csvFormat: 'address1,address2,city,postcode,country',
+        geoJSON: false,
     })
     await cf.find();
 }

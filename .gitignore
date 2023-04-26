@@ -4,3 +4,4 @@ source.csv
 results.json
 old.js
 /build
+/src/test/coverage
